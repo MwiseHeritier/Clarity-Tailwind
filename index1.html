@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Button</title>
+    <style>
+        .play-button {
+            width: 60px;
+            height: 60px;
+            background-color: #ff4500;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease;
+        }
+
+        .play-button:hover {
+            background-color: #e03e00;
+        }
+
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-left: 20px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="play-button">
+        <div class="play-icon">
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+        </div>
+    </button>
+
+</body>
+</html>
